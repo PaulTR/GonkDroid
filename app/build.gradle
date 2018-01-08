@@ -35,6 +35,13 @@ android {
     }
 }
 
+repositories {
+    jcenter()
+    maven {
+        url "https://maven.google.com"
+    }
+}
+
 dependencies {
     compile 'com.google.android.things:androidthings:0.6-devpreview'
 
@@ -45,5 +52,5 @@ dependencies {
     implementation project(':grpc')
     implementation 'com.google.android.things.contrib:driver-voicehat:0.6'
 
-    compile 'com.google.android.gms:play-services-nearby:+'
+    compile 'com.google.android.gms:play-services-nearby:11.6.2'
 }
